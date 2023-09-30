@@ -108,6 +108,10 @@ const SignUp = () => (
         name="password"
         rules={[
           {
+            required: true,
+            message: "Please input your password again",
+          },
+          {
             validator: validatePassword,
           },
         ]}
